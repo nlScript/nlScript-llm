@@ -1,4 +1,4 @@
-# Tine-tune an LLM with the help of nlScript
+# Fine-tune an LLM with the help of nlScript
 
 This repository demonstrates how to use nlScript to fine-tune an LLM for a custom language created via nlScript.
 
