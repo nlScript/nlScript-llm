@@ -1,0 +1,43 @@
+[workspace]
+name = "nlomero"
+version = "0.1.0"
+platforms = [
+  { platform = "linux-64", cuda = "12.4" },
+  { platform = "win-64", cuda = "12.4" },
+]
+channels = [
+  "nvidia",
+  "pytorch",
+  "conda-forge"
+]
+
+[dependencies]
+python = "3.10.*"
+setuptools = "*"
+cuda = "12.4.*"
+ipykernel = "*"
+ipywidgets = "*"
+jupyter = ">=1.1.1,<2"
+nbstripout = ">=0.9.1,<0.10"
+
+[pypi-dependencies]
+unsloth = "==2025.6.8"
+unsloth-zoo = "==2025.6.6"
+torch = { version = "==2.6.0", index = "https://download.pytorch.org/whl/cu124" }
+trl = "==0.19.0"
+transformers = "==4.53.0"
+tokenizers = "==0.21.2"
+accelerate = "==1.8.1"
+peft = "==0.15.2"
+matplotlib = "*"
+
+[target.win-64.dependencies]
+vs_win-64 = "*"
+
+
+[target.win-64.pypi-dependencies]
+torch = { version = "==2.6.0", index = "https://download.pytorch.org/whl/cu124" }
+triton-windows = ">=3.2,<3.3"
+
+
+# unsloth = { git = "https://github.com/unslothai/unsloth.git", rev = "February-2026", extras = ["cu124-torch260"] }
