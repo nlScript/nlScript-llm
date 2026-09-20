@@ -15,10 +15,12 @@ channels = [
 python = "3.10.*"
 setuptools = "*"
 cuda = "12.4.*"
+protobuf = ">=3.20,<4"
 ipykernel = "*"
 ipywidgets = "*"
 jupyter = ">=1.1.1,<2"
 nbstripout = ">=0.9.1,<0.10"
+"llama.cpp" = ">=10751,<10752"
 
 [pypi-dependencies]
 unsloth = "==2025.6.8"
@@ -29,6 +31,8 @@ transformers = "==4.53.0"
 tokenizers = "==0.21.2"
 accelerate = "==1.8.1"
 peft = "==0.15.2"
+gguf = ">=0.10,<1"
+sentencepiece = ">=0.2"
 matplotlib = "*"
 
 [target.win-64.dependencies]
